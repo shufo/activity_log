@@ -1,0 +1,9 @@
+language: elixir
+elixir:
+  - 1.5.0
+otp_release:
+  - 19.0
+sudo: false
+env:
+  - MIX_ENV=test
+script: mix coveralls.travis
